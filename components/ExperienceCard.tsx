@@ -5,7 +5,7 @@ export const ExperienceCard = () => {
   return (
     <article
       className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] snap-center bg-[#292929] 
-    p-10 hover:opacity-100 opacity-70 cursor-pointer transition-opacity duration-200 overflow-hidden md:mt-52 xl:mt-64 mt-24"
+    p-10 hover:opacity-100 opacity-70 cursor-pointer transition-opacity duration-200 overflow-hidden md:mt-52 mt-24"
     >
       <motion.img
         initial={{ y: -100, opacity: 0 }}

@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="min-h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircle />
       <img
         src="https://media-exp1.licdn.com/dms/image/C4D03AQH280l9CKLAUw/profile-displayphoto-shrink_800_800/0/1642705383565?e=1669248000&v=beta&t=DYPw9YLWJhCp6WEVcggi44e417k9kcKDUyo77N4wNYw"

@@ -9,7 +9,7 @@ export const WorkExperience: React.FC = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ diration: 1.5 }}
-      className="h-screen flex relative  flex-col text-left md:flex-row 
+      className="min-h-screen flex relative  flex-col text-left md:flex-row 
     max-w-full px-10 justify-evenly mx-auto items-center"
     >
       <div className="sectionTitle">Experience</div>

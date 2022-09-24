@@ -11,4 +11,8 @@
   .sectionTitle {
     @apply absolute top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl;
   }
+
+  .sectionSubtitle {
+    @apply absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm;
+  }
 }

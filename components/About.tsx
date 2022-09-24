@@ -7,7 +7,7 @@ export const About: React.FC = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ diration: 1.5 }}
-      className="flex flex-col relative h-screen  text-center md:text-justify max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="flex flex-col relative min-h-screen  text-center md:text-justify max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
       <h3 className="sectionTitle">About</h3>
       <div className="flex items-center flex-col md:flex-row xl:mt-52 self-center">
