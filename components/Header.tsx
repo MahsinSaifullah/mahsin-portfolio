@@ -21,11 +21,6 @@ export const Header: React.FC = () => {
           fgColor="gray"
           bgColor="transparent"
         />
-        <SocialIcon
-          url="https://www.linkedin.com/in/mahsin-saifullah-a503b3107/"
-          fgColor="gray"
-          bgColor="transparent"
-        />
       </motion.div>
       <motion.div
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
