@@ -8,3 +8,4 @@ export * from './Skills';
 export * from './SkillItem';
 export * from './Projects';
 export * from './ProjectItem';
+export * from './Contact';
