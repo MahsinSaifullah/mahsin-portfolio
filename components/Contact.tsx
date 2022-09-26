@@ -1,7 +1,17 @@
 import React from 'react';
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
+import { SubmitHandler, useForm } from 'react-hook-form';
 
+interface ContactFormInputs {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
 export const Contact = () => {
+  const { register, handleSubmit } = useForm<ContactFormInputs>();
+  const onSubmit: SubmitHandler<ContactFormInputs> = (data) =>
+    console.log(data);
   return (
     <div
       className="min-h-screen relative flex flex-col text-center md:text-left 
@@ -30,13 +40,35 @@ export const Contact = () => {
             </p>
           </div>
         </div>
-        <form className="flex flex-col space-y-2 mx-auto w-full">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col space-y-2 mx-auto w-full"
+        >
           <div className="flex space-x-2  w-full">
-            <input placeholder="Name" className="contactInput" type="text" />
-            <input placeholder="Email" className="contactInput" type="email" />
+            <input
+              {...register('name')}
+              placeholder="Name"
+              className="contactInput"
+              type="text"
+            />
+            <input
+              {...register('email')}
+              placeholder="Email"
+              className="contactInput"
+              type="email"
+            />
           </div>
-          <input placeholder="Subject" className="contactInput" type="text" />
-          <textarea placeholder="Message" className="contactInput" />
+          <input
+            {...register('subject')}
+            placeholder="Subject"
+            className="contactInput"
+            type="text"
+          />
+          <textarea
+            {...register('message')}
+            placeholder="Message"
+            className="contactInput"
+          />
           <button
             type="submit"
             className="bg-[#F7ABBA] px-4 py-2 sm:py-5 sm:px-10 rounded-md text-black font-bold"
