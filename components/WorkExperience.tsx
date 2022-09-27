@@ -13,7 +13,10 @@ export const WorkExperience: React.FC = () => {
     max-w-full px-10 justify-evenly mx-auto items-center"
     >
       <div className="sectionTitle">Experience</div>
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
+      <div
+        className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory 
+      scrollbar-track-gray-400/20 scrollbar-thumb-[#F7ABBA]/80 scrollbar-thin"
+      >
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />

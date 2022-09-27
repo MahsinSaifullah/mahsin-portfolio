@@ -13,7 +13,7 @@ export const Projects = () => {
     >
       <h3 className="sectionTitle">Projects</h3>
       <div className="h-24 w-24" />
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#F7ABBA]/80 scrollbar-thin">
         <ProjectItem />
         <ProjectItem />
         <ProjectItem />
